@@ -26,9 +26,13 @@ h1, h2, h3, h4, h5, h6, strong {
     font-weight: 500;
 }
 
-p, a, li, span, label, input, textarea {
+p, a, li, label, input, textarea, footer {
     color: var(--mainText);
     font-family: 'Roboto Mono', monospace;
+}
+
+span {
+    font-size: 25px;
 }
 
 a {
@@ -38,6 +42,8 @@ a {
 
 ul {
     list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
 h1 { font-size: 56px; }
@@ -148,8 +154,8 @@ h6 { font-size: 16px; }
 #profile-pic {
     display: block;
     margin: 0 auto;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
 }
@@ -193,8 +199,6 @@ h6 { font-size: 16px; }
 }
 
 #settings-note {
-    font-size: 12px;
-    font-style: italic;
     text-align: center;
 }
 
@@ -208,18 +212,19 @@ h6 { font-size: 16px; }
 
 #preview-shadow {
     background-color: var(--previewShadow);
-    width: 300px;
-    height: 180px;
+    width: 400px;
+    height: 230px;
     padding-left: 30px;
     padding-top: 30px;
 }
 
 #preview {
-    width: 300px;
+    width: 400px;
     border: 1.5px solid #17a2b8;
     background-color: var(--previewBg);
     padding: 15px;
     position: relative;
+    text-align: center;
 }
 
 .corner {
@@ -349,6 +354,13 @@ h6 { font-size: 16px; }
     border: none;
 }
 
+footer {
+    background-color: var(--mainColor);
+    color: var(--mainText);
+    text-align: center;
+    padding: 10px;
+}
+
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
@@ -356,6 +368,10 @@ h6 { font-size: 16px; }
 }
 
 @media screen and (max-width: 900px) {
+    .greeting-wrapper {
+        text-align: center;
+    }
+
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -366,6 +382,36 @@ h6 { font-size: 16px; }
     }
 
     .right-column {
+        padding-bottom: 100px;
         justify-content: center;
+    }
+
+    #About {
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #profile-pic {
+        width: 350px;
+        height: 350px;
+    }
+
+    #preview-shadow {
+        padding: 0;
+        width: 350px;
+    }
+
+    #preview {
+        padding: 0px;
+        width: 350px;
+    }
+
+    .bio {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
     }
 }
