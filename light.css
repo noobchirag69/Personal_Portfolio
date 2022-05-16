@@ -16,6 +16,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body * {
+    transition: 0.5s;
+}
+
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
@@ -103,6 +107,10 @@ h6 { font-size: 16px; }
     margin-left: 5px;
 }
 
+#navigation a {
+    color: var(--mainText);
+}
+
 .dots-wrapper {
     display: flex;
     padding: 10px;
@@ -140,7 +148,7 @@ h6 { font-size: 16px; }
 #profile-pic {
     display: block;
     margin: 0 auto;
-    height: 350px;
+    height: 300px;
     width: 300px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
