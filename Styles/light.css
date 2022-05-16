@@ -213,7 +213,7 @@ h6 { font-size: 16px; }
 #preview-shadow {
     background-color: var(--previewShadow);
     width: 400px;
-    height: 230px;
+    height: 245px;
     padding-left: 30px;
     padding-top: 30px;
 }
@@ -367,7 +367,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .greeting-wrapper {
         text-align: center;
     }
