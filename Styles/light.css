@@ -347,6 +347,7 @@ h6 {
 
 .about-wrapper {
     display: grid;
+    text-align: justify;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-bottom: 50px;
     padding-top: 35px;
@@ -472,9 +473,8 @@ footer span {
         justify-content: center;
     }
 
-    #About {
+    .about-wrapper {
         padding-top: 0;
-        text-align: center;
     }
 }
 
@@ -507,6 +507,10 @@ footer span {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 10px;
+    }
+
+    .about-wrapper {
+        text-align: center;
     }
 
     .email {
