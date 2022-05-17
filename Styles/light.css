@@ -218,7 +218,7 @@ h6 {
     width: 100%;
     background-color: var(--mainColor);
     border-left: 2px solid var(--mainText);
-    animation: typing 3s steps(12) infinite;
+    animation: typing 3s steps(16) infinite;
 }
 
 @keyframes typing {
@@ -370,6 +370,9 @@ h6 {
 #social_img {
     width: 100%;
     border-radius: 5px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
 #projects-wrapper {
@@ -436,6 +439,9 @@ h6 {
     margin-bottom: 20px;
     border: 1px solid var(--borderColor);
     border-radius: 5px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
 .box i {
