@@ -380,7 +380,7 @@ h6 { font-size: 16px; }
     text-align: center;
 }
 
-.box {
+.box1, .box2, .box3 {
     background-color: var(--mainColor);
     padding: 20px;
     margin-bottom: 20px;
@@ -465,7 +465,7 @@ footer span {
         padding-bottom: 10px;
     }
 
-    .box p{
-        font-size: 15px;
+    .box3 p {
+        font-size: 13px;
     }
 }
