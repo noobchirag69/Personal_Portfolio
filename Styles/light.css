@@ -376,6 +376,10 @@ h6 { font-size: 16px; }
     font-size: 14px;
 }
 
+#contact-wrapper {
+    padding-top: 50px;
+}
+
 #contact {
     text-align: center;
 }
