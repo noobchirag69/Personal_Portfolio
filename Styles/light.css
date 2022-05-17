@@ -313,7 +313,7 @@ h6 { font-size: 16px; }
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 35px;
     gap: 100px;
 }
 
@@ -334,8 +334,8 @@ h6 { font-size: 16px; }
 }
 
 #projects-wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .post-wrapper {
@@ -377,7 +377,7 @@ h6 { font-size: 16px; }
 }
 
 #contact-wrapper {
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 #contact {
