@@ -93,7 +93,6 @@ h6 {
 
 #navbar {
     overflow: hidden;
-    grid-area: nav-wrapper;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +109,7 @@ h6 {
 
 #menu {
     margin: 0;
-    padding: 10px;
+    padding: 15px;
 }
 
 #menu li {
@@ -489,14 +488,14 @@ footer span {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     h1 {
         font-size: 42px;
     }
 
     .greeting-wrapper {
-        margin-top: 15%;
+        margin-top: 5%;
     }
 
     #profile-pic {

@@ -12,7 +12,6 @@ function myFunction() {
     }
 }
 
-
 // Theme Change
 let theme = localStorage.getItem('theme')
 
