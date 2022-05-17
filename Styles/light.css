@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, strong {
     font-weight: 500;
 }
 
-p, a, li, label, input, textarea, footer, .static-text{
+p, a, li, label, input, textarea, footer {
     color: var(--mainText);
     font-family: 'Roboto Mono', monospace;
 }
@@ -376,6 +376,22 @@ h6 { font-size: 16px; }
     font-size: 14px;
 }
 
+#contact {
+    text-align: center;
+}
+
+.box {
+    background-color: var(--mainColor);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+}
+
+.box i {
+    color: var(--mainText);
+}
+
 footer {
     background-color: var(--mainColor);
     color: var(--mainText);
@@ -447,5 +463,9 @@ footer span {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 10px;
+    }
+
+    .box p{
+        font-size: 15px;
     }
 }
