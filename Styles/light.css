@@ -208,6 +208,7 @@ h6 { font-size: 16px; }
 
 #profile-pic {
     display: block;
+    border-radius: 50%;
     margin: 0 auto;
     height: 400px;
     width: 400px;
