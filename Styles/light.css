@@ -167,7 +167,7 @@ h6 {
 .intro-wrapper {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 50px;
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -182,7 +182,7 @@ h6 {
 
 .nav-wrapper {
     grid-area: nav-wrapper;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
     font-size: 20px;
     border-bottom: 1px solid var(--borderColor);
     display: flex;
@@ -192,7 +192,6 @@ h6 {
 }
 
 .dynamic-text {
-    margin-left: 15px;
     overflow: hidden;
     line-height: 30px;
     height: 30px;
@@ -355,10 +354,13 @@ h6 {
 }
 
 #skills {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--previewShadow);
-    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style-type: disc;
+    text-align: justify;
 }
 
 .social-links {
@@ -389,7 +391,6 @@ h6 {
 }
 
 .post {
-    border: 1px solid var(--borderColor);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -416,6 +417,8 @@ h6 {
 .post-intro {
     color: #4b5156;
     font-size: 14px;
+    text-align: justify;
+    padding: 0 20px;
 }
 
 #contact-wrapper {
@@ -459,6 +462,7 @@ footer span {
     font-size: 25px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
@@ -469,7 +473,6 @@ footer span {
     .greeting-wrapper {
         text-align: center;
     }
-
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -478,49 +481,74 @@ footer span {
             'right-column'
         ;
     }
-
     .right-column {
         padding-bottom: 100px;
         justify-content: center;
     }
-
     .about-wrapper {
         padding-top: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
-
     h1 {
         font-size: 42px;
     }
-
     .greeting-wrapper {
         margin-top: 5%;
     }
-
     #profile-pic {
         width: 350px;
         height: 350px;
     }
-
+    .right-column {
+        margin-top: -50px;
+    }
     #preview-shadow {
         padding: 0;
         width: 350px;
     }
-
     #preview {
         padding: 0px;
         width: 350px;
     }
-
     .bio {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 10px;
     }
-
     .about-wrapper {
         text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    #navbar {
+        justify-content: center;
+    }
+    .dots {
+        display: none;
+    }
+    #profile-pic {
+        width: 300px;
+        height: 300px;
+    }
+    #preview-shadow {
+        background-color: var(--secondaryColor);
+    }
+    #preview {
+        border: none;
+    }
+    .corner {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    #preview-shadow, #preview {
+        width: 300px;
+    }
+    .bio {
+        text-align: justify;
     }
 }

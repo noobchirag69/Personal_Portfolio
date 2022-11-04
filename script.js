@@ -1,52 +1,53 @@
 // Sticky NavBar
 window.onscroll = function () { myFunction() };
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+let navbar = document.querySelector("#navbar");
+let sticky = navbar.offsetTop;
 
 function myFunction() {
     if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
     } else {
         navbar.classList.remove("sticky");
     }
 }
 
 // Theme Change
-let theme = localStorage.getItem('theme')
+let theme = localStorage.getItem('theme');
+let themeDots = document.querySelectorAll('.theme-dot');
 
-let themeDots = document.getElementsByClassName('theme-dot')
-
+// Setting Default Theme
 if (theme == null) {
-    setTheme('light')
+    setTheme('light');
 } else {
-    setTheme(theme)
+    setTheme(theme);
 }
 
-for (var i = 0; themeDots.length > i; i++) {
+// Looping through the theme options
+for (let i = 0; themeDots.length > i; i++) {
     themeDots[i].addEventListener('click', function () {
-        let mode = this.dataset.mode
-        console.log('Mode: ', mode)
-        setTheme(mode)
+        let mode = this.dataset.mode;
+        setTheme(mode);
     })
 }
 
+// Setting the theme
 function setTheme(mode) {
+    // Light Theme
     if (mode == 'light') {
-        document.getElementById('theme-style').href = 'Styles/light.css'
+        document.querySelector('#theme-style').href = 'Styles/light.css';
     }
-
+    // Blue Theme
     if (mode == 'blue') {
-        document.getElementById('theme-style').href = 'Styles/blue.css'
+        document.querySelector('#theme-style').href = 'Styles/blue.css';
     }
-
+    // Green Theme
     if (mode == 'green') {
-        document.getElementById('theme-style').href = 'Styles/green.css'
+        document.querySelector('#theme-style').href = 'Styles/green.css';
     }
-
+    // Purple Theme
     if (mode == 'purple') {
-        document.getElementById('theme-style').href = 'Styles/purple.css'
+        document.querySelector('#theme-style').href = 'Styles/purple.css';
     }
-
-    localStorage.setItem('theme', mode)
+    // Storing the theme in localstorage
+    localStorage.setItem('theme', mode);
 }
