@@ -187,7 +187,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--mainColor);
+  background-color: var(--previewShadow);
 }
 
 .dynamic-text {
@@ -214,7 +214,7 @@ h6 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--mainColor);
+  background-color: var(--previewShadow);
   border-left: 2px solid var(--mainText);
   animation: typing 3s steps(16) infinite;
 }
@@ -409,6 +409,7 @@ h6 {
 .post-title {
   color: black;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .post-intro {
